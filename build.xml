@@ -84,7 +84,7 @@
             <phpunit haltonerror="true" haltonfailure="true" printsummary="true">
             <batchtest>
             <fileset dir="${tests.dir}">
-                <include name="**/test.php" />
+                <include name="**/*.php" />
             </fileset>
             </batchtest>
             </phpunit>
