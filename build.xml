@@ -8,9 +8,9 @@
         <property name="tarfile"     value="${phing.project.name}.${buildnumber}.${buildid}.tar.gz" />
         <property name="pkgfile"     value="${phing.project.name}.${version}.tgz" />
         <property name="distfile"    value="dist/${tarfile}" />
-        <property name="tests.dir" value="test" />
+        <property name="tests.dir" value="api" />
         <fileset id="api.tar.gz" dir=".">
-            <include name="**"/>
+            <include name="api/*.php"/>
             <include name="*.php"/>
             <include name="*.xml"/>
             <include name="*.txt"/>
